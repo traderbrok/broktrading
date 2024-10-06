@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP & SL Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>TP & SL Calculator</h1>
+            <label for="asset-select">Select Asset:</label>
+            <select id="asset-select">
+                <option value="BTC/USD">BTC/USD</option>
+                <option value="ETH/USD">ETH/USD</option>
+                <option value="LTC/USD">LTC/USD</option>
+            </select>
+            <button id="get-price-btn">Get Current Price</button>
+            <label for="entry-price">Entry Price:</label>
+            <input type="text" id="entry-price" placeholder="Enter Entry Price">
+            <label for="trade-size">Trade Size (USD):</label>
+            <input type="text" id="trade-size" placeholder="Enter Trade Size">
+            <label for="leverage">Leverage:</label>
+            <input type="text" id="leverage" placeholder="Enter Leverage">
+            <button id="calculate-btn">Calculate TP & SL</button>
+            <button id="save-btn">Save Result</button>
+        </div>
+
+        <div class="results">
+            <h2>Take-Profit Points:</h2>
+            <div id="tp-results"></div>
+            <h2>Stop-Loss Points:</h2>
+            <div id="sl-results"></div>
+        </div>
+
+        <div class="saved-trades">
+            <h2>Saved Trades</h2>
+            <div id="saved-trades"></div>
+        </div>
+    </div>
+
+    <!-- Opdateret referering til index.js -->
+    <script src="index.js"></script>
+</body>
+</html>
